@@ -35,7 +35,7 @@ Welcome to my personal developer portfolio! This portfolio is engineered to deli
 | **04** | **9Tails E-Commerce WebApp** | Java, Spring Boot, REST APIs | 🛡️ Full-Stack Backend | [💻 Code](https://github.com/DuddeJaitej/9Tails-Ecommerce-WebApp) |
 | **05** | **Luxury Watch Experience** | TypeScript, React, Tailwind CSS | ⚡ Live on Render *(~30s spin-up)* | [🌐 Live Demo](https://luxury-watch-landing.onrender.com/) • [💻 Code](https://github.com/DuddeJaitej/Luxury-Watch-Landing-Page) |
 | **06** | **University Fest Portal** | HTML5, CSS3, JavaScript | ⚡ Live on GitHub Pages | [🌐 Live Demo](https://duddejaitej.github.io/University-Fest-Landing-Page/) • [💻 Code](https://github.com/DuddeJaitej/University-Fest-Landing-Page) |
-| **07** | **UI / UX Design System** | UI/UX Design, Figma, CSS3 | 🎨 Interactive Prototype | [💻 Code](https://github.com/DuddeJaitej/Ui-UxDesigningProjectOne) |
+| **07** | **UI / UX Design System** | UI/UX Design, Figma, CSS3 | 🎨 Interactive Prototype | [📄 PDF Preview](https://github.com/DuddeJaitej/Ui-UxDesigningProjectOne/blob/main/Chandana%20Portfolio.pdf) • [💻 Code](https://github.com/DuddeJaitej/Ui-UxDesigningProjectOne) |
 
 ---
 
