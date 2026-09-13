@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const allCards = document.querySelectorAll('.stacked-project-card');
         const allDots = document.querySelectorAll('.rpm-dot');
-        const totalCards = allCards.length || 8;
+        const totalCards = allCards.length || 7;
 
         const wrapperRect = projectsScrollWrapper.getBoundingClientRect();
         const wrapperTop = wrapperRect.top;

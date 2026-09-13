@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # 🚀 Jaitej Dudde — Developer Portfolio
 
@@ -33,10 +33,9 @@ Welcome to my personal developer portfolio! This portfolio is engineered to deli
 | **02** | **Student Portal Management** | Spring Boot, Hibernate, MySQL, JWT | 🛡️ Backend & APIs | [💻 Code](https://github.com/DuddeJaitej/Student-Portal-Management-System) |
 | **03** | **Restorent Web Application** | HTML5, CSS3, JavaScript | ⚡ Live on Vercel | [🌐 Live Demo](https://restorent-lyart.vercel.app) • [💻 Code](https://github.com/DuddeJaitej/Restorent) |
 | **04** | **9Tails E-Commerce WebApp** | Java, Spring Boot, REST APIs | 🛡️ Full-Stack Backend | [💻 Code](https://github.com/DuddeJaitej/9Tails-Ecommerce-WebApp) |
-| **05** | **ApplyForge Application Engine** | JavaScript, Node.js, REST APIs | ⚡ Automation Engine | [💻 Code](https://github.com/DuddeJaitej/ApplyForge) |
-| **06** | **Luxury Watch Experience** | TypeScript, React, Tailwind CSS | ⚡ Live on Render *(~30s spin-up)* | [🌐 Live Demo](https://luxury-watch-landing.onrender.com/) • [💻 Code](https://github.com/DuddeJaitej/Luxury-Watch-Landing-Page) |
-| **07** | **University Fest Portal** | HTML5, CSS3, JavaScript | ⚡ Live on GitHub Pages | [🌐 Live Demo](https://duddejaitej.github.io/University-Fest-Landing-Page/) • [💻 Code](https://github.com/DuddeJaitej/University-Fest-Landing-Page) |
-| **08** | **UI / UX Design System** | UI/UX Design, Figma, CSS3 | 🎨 Interactive Prototype | [💻 Code](https://github.com/DuddeJaitej/Ui-UxDesigningProjectOne) |
+| **05** | **Luxury Watch Experience** | TypeScript, React, Tailwind CSS | ⚡ Live on Render *(~30s spin-up)* | [🌐 Live Demo](https://luxury-watch-landing.onrender.com/) • [💻 Code](https://github.com/DuddeJaitej/Luxury-Watch-Landing-Page) |
+| **06** | **University Fest Portal** | HTML5, CSS3, JavaScript | ⚡ Live on GitHub Pages | [🌐 Live Demo](https://duddejaitej.github.io/University-Fest-Landing-Page/) • [💻 Code](https://github.com/DuddeJaitej/University-Fest-Landing-Page) |
+| **07** | **UI / UX Design System** | UI/UX Design, Figma, CSS3 | 🎨 Interactive Prototype | [💻 Code](https://github.com/DuddeJaitej/Ui-UxDesigningProjectOne) |
 
 ---
 
@@ -44,7 +43,7 @@ Welcome to my personal developer portfolio! This portfolio is engineered to deli
 
 - 🏍️ **Scroll-Driven Superbike Speedometer HUD**:
   - Dynamically sweeps across 240° tachometer arc as you scroll through featured projects.
-  - Real-time digital KM/H readout, active project gear shifter (`01` to `08`), and RPM indicator lights.
+  - Real-time digital KM/H readout, active project gear shifter (`01` to `07`), and RPM indicator lights.
   - Dynamic status telemetry capsule: `⚡ Cruise Control` ➔ `⚡ Accelerating` ➔ `🔥 High Speed` ➔ `⚡ Hyper Velocity` ➔ `🚀 Redline Nitro`.
 - 🗂️ **Sticky Deck Card-Stacking Physics**:
   - Realistic depth scaling and smooth translateY transform stack for project cards.
