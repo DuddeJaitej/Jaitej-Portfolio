@@ -2347,21 +2347,12 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-1px);
 }
 
-/* ============ DEVELOPER PASSION & CORE FOCUS SHOWCASE ============ */
-.developer-passion-showcase {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.passion-section-header {
-    text-align: center;
-    max-width: 750px;
-    margin: 0 auto 36px auto;
+/* ============ DEVELOPER PASSION & CORE FOCUS SECTION ============ */
+.passion-section {
+    padding: 100px 30px;
+    max-width: 1240px;
+    margin: 0 auto;
     position: relative;
-    z-index: 1;
 }
 
 .passion-cards-grid {
@@ -2369,21 +2360,23 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .passion-card {
     background: rgba(14, 19, 36, 0.75);
     border: 1px solid var(--border-subtle);
     border-radius: 20px;
-    padding: 28px;
+    padding: 30px;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     transition: all 0.35s var(--transition-smooth);
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 
 .passion-card:hover {
@@ -2406,17 +2399,18 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45), 0 0 25px rgba(251, 113, 133, 0.15);
 }
 
-.passion-card-top {
+.passion-card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .passion-icon-box {
-    width: 46px;
-    height: 46px;
-    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2456,57 +2450,67 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    padding: 3px 9px;
+    padding: 4px 10px;
     border-radius: 6px;
     background: rgba(0, 245, 160, 0.08);
     border: 1px solid rgba(0, 245, 160, 0.22);
     color: var(--primary);
 }
 
+.passion-pill-tag.tag-primary {
+    background: rgba(0, 245, 160, 0.08);
+    border-color: rgba(0, 245, 160, 0.25);
+    color: var(--primary);
+}
+
 .passion-pill-tag.tag-accent {
     background: rgba(192, 132, 252, 0.08);
-    border-color: rgba(192, 132, 252, 0.22);
+    border-color: rgba(192, 132, 252, 0.25);
     color: var(--accent);
 }
 
 .passion-pill-tag.tag-secondary {
     background: rgba(251, 113, 133, 0.08);
-    border-color: rgba(251, 113, 133, 0.22);
+    border-color: rgba(251, 113, 133, 0.25);
     color: var(--secondary);
 }
 
 .passion-card-heading {
-    font-size: 1.22rem;
+    font-size: 1.25rem;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-weight: 700;
     line-height: 1.35;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
 }
 
 .passion-card-desc {
-    font-size: 0.9rem;
+    font-size: 0.92rem;
     color: var(--text-muted);
     line-height: 1.65;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     flex: 1;
 }
 
 .passion-card-footer {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px;
     margin-top: auto;
-    padding-top: 14px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    width: 100%;
 }
 
 .passion-tech-badge {
     font-family: var(--font-mono);
     font-size: 0.72rem;
-    padding: 2px 8px;
+    padding: 3px 10px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border-subtle);
-    border-radius: 5px;
+    border-radius: 6px;
     color: var(--text-muted);
 }
 
@@ -2517,7 +2521,7 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, rgba(14, 19, 36, 0.9) 0%, rgba(22, 16, 42, 0.9) 100%);
     border: 1px solid rgba(0, 245, 160, 0.25);
     border-radius: 22px;
-    padding: 32px 42px;
+    padding: 36px 44px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), 0 0 30px rgba(0, 245, 160, 0.08);
@@ -2530,7 +2534,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .philosophy-quote-mark {
     font-family: var(--font-heading);
-    font-size: 3.6rem;
+    font-size: 3.8rem;
     line-height: 0.6;
     color: rgba(0, 245, 160, 0.35);
     margin-bottom: 12px;
@@ -2538,7 +2542,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .philosophy-text {
-    font-size: 1.02rem;
+    font-size: 1.04rem;
     color: #f1f5f9;
     line-height: 1.8;
     max-width: 920px;
@@ -2589,6 +2593,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 960px) {
     .passion-cards-grid {
         grid-template-columns: 1fr;
+    }
+    .passion-card-heading {
+        min-height: auto;
     }
     .passion-philosophy-banner {
         padding: 26px 20px;
