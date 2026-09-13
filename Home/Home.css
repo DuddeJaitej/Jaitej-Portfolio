@@ -1588,6 +1588,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+    cursor: pointer;
     transition: transform 0.4s var(--transition-smooth), border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -1848,6 +1849,11 @@ h1, h2, h3, h4, h5, h6 {
     background: #02050c;
     border: 1px solid rgba(255, 255, 255, 0.08);
     aspect-ratio: 16 / 10;
+    cursor: pointer;
+}
+
+.stack-card-visual:hover {
+    border-color: rgba(0, 245, 160, 0.4);
 }
 
 .stack-card-visual img {
