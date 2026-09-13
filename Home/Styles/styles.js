@@ -455,9 +455,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const needleAngle = -120 + blendedProgress * 240;
         speedoNeedle.style.transform = `translateX(-50%) rotate(${needleAngle}deg)`;
 
-        // SVG Track Dashoffset (Circumference ~ 482)
+        // SVG Track Dashoffset (Circumference ~ 553 for r=132, 240deg arc)
         if (gaugeActiveTrack) {
-            const arcLength = 482;
+            const arcLength = 553;
             const offset = arcLength - (blendedProgress * arcLength);
             gaugeActiveTrack.style.strokeDasharray = `${arcLength}`;
             gaugeActiveTrack.style.strokeDashoffset = offset;

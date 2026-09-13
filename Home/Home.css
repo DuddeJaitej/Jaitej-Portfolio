@@ -1560,45 +1560,46 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.012);
 }
 
-/* ============ SCROLL-STACKING PROJECTS WITH PROMINENT LEFT SPEEDOMETER (NO BOX) ============ */
+/* ============ SCROLL-STACKING PROJECTS WITH PROMINENT LEFT SPEEDOMETER (FULL LEFT ALIGNED) ============ */
 .projects-section {
-    padding: 90px 30px;
-    max-width: 1320px;
+    padding: 90px 40px 90px 10px;
+    max-width: 1540px;
     margin: 0 auto;
     position: relative;
 }
 
 .projects-scroll-wrapper {
     display: grid;
-    grid-template-columns: 360px 1fr;
-    gap: 48px;
+    grid-template-columns: 460px 1fr;
+    gap: 36px;
     position: relative;
     margin-top: 24px;
 }
 
-/* Left Pure Speedometer HUD Column (No Container / Card Box) */
+/* Left Pure Speedometer HUD Column (Prominent Full Left Aligned) */
 .speedometer-hud-column {
     position: relative;
 }
 
 .speedometer-pure-cluster {
     position: sticky;
-    top: 130px;
+    top: 110px;
     background: transparent;
     border: none;
     padding: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14px;
+    margin-left: -10px;
+    gap: 16px;
     transition: all 0.3s ease;
 }
 
-/* Dial Structure */
+/* Dial Structure - Extra Large & Prominent */
 .speedometer-dial {
     position: relative;
-    width: 320px;
-    height: 250px;
+    width: 440px;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1615,16 +1616,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gauge-active-track {
-    stroke-dasharray: 482;
-    stroke-dashoffset: 482;
+    stroke-dasharray: 553;
+    stroke-dashoffset: 553;
     transition: stroke-dashoffset 0.08s linear;
 }
 
 .gauge-tick-text {
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
-    fill: rgba(255, 255, 255, 0.45);
+    fill: rgba(255, 255, 255, 0.5);
     text-anchor: middle;
     dominant-baseline: middle;
 }
@@ -1637,7 +1638,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Rotating Needle */
 .speedometer-needle-pivot {
     position: absolute;
-    bottom: 35px;
+    bottom: 50px;
     left: 50%;
     width: 6px;
     height: 6px;
@@ -1652,29 +1653,29 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 4.5px;
-    height: 105px;
+    width: 5.5px;
+    height: 132px;
     background: linear-gradient(to top, var(--primary), var(--secondary));
     border-radius: 4px;
-    box-shadow: 0 0 16px var(--primary);
+    box-shadow: 0 0 20px var(--primary);
 }
 
 .needle-center-cap {
     position: absolute;
-    bottom: -11px;
+    bottom: -13px;
     left: 50%;
     transform: translateX(-50%);
-    width: 22px;
-    height: 22px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     background: #03060c;
-    border: 2.5px solid var(--primary);
-    box-shadow: 0 0 12px rgba(0, 245, 160, 0.4);
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 16px rgba(0, 245, 160, 0.4);
 }
 
 .speedo-digital-readout {
     position: absolute;
-    bottom: 45px;
+    bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1682,97 +1683,45 @@ h1, h2, h3, h4, h5, h6 {
 
 .speed-val {
     font-family: var(--font-heading);
-    font-size: 3.2rem;
+    font-size: 4.2rem;
     font-weight: 900;
     color: #fff;
     line-height: 1;
     letter-spacing: -1px;
-    text-shadow: 0 0 24px var(--primary-glow);
+    text-shadow: 0 0 28px var(--primary-glow);
 }
 
 .speed-unit {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.88rem;
     color: var(--primary);
     font-weight: 700;
-    letter-spacing: 1.5px;
-    margin-top: 3px;
-}
-
-/* Gear Cluster */
-.speedo-gear-cluster {
-    width: 100%;
-    max-width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    padding-top: 6px;
-}
-
-.gear-status {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 85%;
-}
-
-.gear-label {
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: var(--text-dim);
-}
-
-.gear-active-num {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--accent);
-    text-shadow: 0 0 12px rgba(192, 132, 252, 0.4);
-}
-
-.rpm-lights-row {
-    display: flex;
-    gap: 8px;
-}
-
-.rpm-dot {
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    transition: all 0.25s ease;
-}
-
-.rpm-dot.active {
-    background: var(--primary);
-    box-shadow: 0 0 12px var(--primary);
+    letter-spacing: 1.8px;
+    margin-top: 4px;
 }
 
 .speedo-status-capsule {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 7px 20px;
-    background: rgba(0, 245, 160, 0.07);
-    border: 1px solid rgba(0, 245, 160, 0.25);
+    padding: 8px 24px;
+    background: rgba(0, 245, 160, 0.08);
+    border: 1px solid rgba(0, 245, 160, 0.3);
     border-radius: 999px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    margin-top: 4px;
-    min-width: 190px;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+    margin-top: 6px;
+    min-width: 210px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
 }
 
 .speedo-status-text {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.84rem;
     font-weight: 700;
     color: #6ee7b7;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.9px;
     white-space: nowrap;
     display: inline-block;
     transition: color 0.3s ease;
