@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaitej.dev | Java Full Stack Developer & Vibe Coder</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Home.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <!-- Ambient Glowing Background Elements -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Blast Particle Canvas Container -->
+    <div id="blastContainer" class="blast-particles-layer"></div>
+
+    <div class="main-container">
+        <!-- Minimalist Floating Header -->
+        <header class="floating-header" id="navbar">
+            <nav class="nav-container">
+                <!-- Stylish Text Logo -->
+                <a href="#home" class="brand-logo" aria-label="Jaitej.dev Home">
+                    <span class="logo-name">Jaitej<span class="logo-accent">.dev</span></span>
+                </a>
+
+                <!-- Navigation Links Pill -->
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#experience" class="nav-link">Experience</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#education" class="nav-link">Education</a></li>
+                        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                        <li><a href="#contact" class="nav-link nav-contact-pill">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- ================= HERO SECTION ================= -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <!-- Text Container -->
+                <div class="hero-text-container reveal reveal-left">
+                    <div class="hero-badge">
+                        <span class="status-dot"></span>
+                        <span>Available for Opportunities</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <br>
+                        <span class="gradient-text hero-name">Dudde Jaitej</span>
+                    </h1>
+                    
+                    <div class="hero-role-wrapper">
+                        <span class="role-prefix">I build scalable solutions as a</span>
+                        <div class="role-box">
+                            <span class="role-text" id="typewriterText">Java Full Stack Developer</span>
+                        </div>
+                    </div>
+
+                    <p class="hero-description">
+                        Specialized in robust backend architectures with <strong>Spring Boot</strong>, secure <strong>JWT Authentication</strong>, and clean <strong>MySQL</strong> schema design, paired with fast, responsive <strong>React.js</strong> interfaces.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="../Assets/Resume-PDF/Dudde-Jaitej_Java_Developer.pdf" class="btn btn-hero-primary" download>
+                            <span class="btn-text">Download Resume</span>
+                            <i data-feather="download" class="btn-icon"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-hero-secondary">
+                            <span class="btn-text">Explore Projects</span>
+                            <i data-feather="arrow-down-right" class="btn-icon"></i>
+                        </a>
+                    </div>
+
+                    <!-- Small, Clean Social Icons -->
+                    <div class="hero-socials clean-socials-small">
+                        <a href="https://www.linkedin.com/in/jaitejdudde" class="small-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn Profile">
+                            <img src="../Assets/Icons/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/DuddeJaitej" class="small-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub Profile">
+                            <img src="../Assets/Icons/github.png" alt="GitHub">
+                        </a>
+                    </div>
+
+                    <!-- Quick Stats Banner -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2025</span>
+                            <span class="stat-label">MCA Graduate</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">REST APIs</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">8.19</span>
+                            <span class="stat-label">MCA CGPA</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Container with Simple Stylish Design -->
+                <div class="hero-image-wrapper reveal reveal-right">
+                    <!-- Clean Minimalist Ambient Glow Aura -->
+                    <div class="hero-avatar-ambient"></div>
+                    <div class="hero-stylish-backdrop"></div>
+
+                    <!-- Main Hero Avatar with Sleek Minimalist Frame & Badges -->
+                    <div class="hero-image-container" id="heroImageContainer">
+                        <div class="cyber-halo"></div>
+                        <div class="cyber-frame"></div>
+
+                        <!-- Cyber Corner Tech Brackets -->
+                        <span class="cyber-corner-cross cross-tl">+</span>
+                        <span class="cyber-corner-cross cross-tr">+</span>
+                        <span class="cyber-corner-cross cross-bl">+</span>
+                        <span class="cyber-corner-cross cross-br">+</span>
+
+                        <!-- Top-Left Badge: MCA 2025 Graduate -->
+                        <div class="floating-badge badge-top-left">
+                            <div class="badge-icon-box grad-icon">🎓</div>
+                            <div class="badge-content">
+                                <span class="badge-tag">Education</span>
+                                <span class="badge-title">MCA 2025 Graduate</span>
+                            </div>
+                        </div>
+
+                        <!-- Main Hero Avatar -->
+                        <div class="image-inner">
+                            <img src="../Assets/Dudde Jaitej (2).png" alt="Dudde Jaitej" class="hero-avatar">
+                            <div class="avatar-glass-glare"></div>
+                        </div>
+
+                        <!-- Bottom-Left Badge: Full Stack Developer -->
+                        <div class="floating-badge badge-bottom-left">
+                            <div class="badge-icon-box dev-icon">💻</div>
+                            <div class="badge-content">
+                                <div class="badge-live-indicator">
+                                    <span class="live-dot"></span>
+                                    <span class="badge-tag">Specialization</span>
+                                </div>
+                                <span class="badge-title">Full Stack Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section id="about" class="about-section">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Get to know me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Balanced Compact Bento Grid -->
+            <div class="about-bento-wrapper">
+                <!-- Main Bio Card -->
+                <div class="bento-card bento-hero-bio reveal reveal-up">
+                    <div class="card-icon-header">
+                        <i data-feather="terminal"></i>
+                        <span class="card-tag">Profile Overview</span>
+                    </div>
+                    <h3>Crafting Scalable Backend & Modern Web Experiences</h3>
+                    <p>
+                        I am a <strong>Java Full Stack Developer</strong> based in Bengaluru, India. I specialize in engineering dependable web applications using <strong>Java, Spring Boot, Spring MVC, Hibernate, REST APIs</strong>, and relational databases like <strong>MySQL</strong>.
+                    </p>
+                    <p>
+                        On the frontend, I create fast and responsive user interfaces with <strong>React.js, JavaScript, HTML5, CSS3</strong>, and <strong>Tailwind CSS</strong>, bridging the gap between elegant UI and high-performance server architecture.
+                    </p>
+                    <div class="about-highlights-row">
+                        <div class="highlight-chip"><i data-feather="check-circle"></i> Clean Code Principles</div>
+                        <div class="highlight-chip"><i data-feather="check-circle"></i> Scalable Microservices</div>
+                        <div class="highlight-chip"><i data-feather="check-circle"></i> High Query Efficiency</div>
+                    </div>
+                </div>
+
+                <!-- Side Card 1: Core Engineering Pillars -->
+                <div class="bento-card bento-card-pillar reveal reveal-up" style="--delay: 0.1s">
+                    <div class="card-icon-header">
+                        <i data-feather="shield"></i>
+                        <span class="card-tag">Engineering Focus</span>
+                    </div>
+                    <h3>Security & Performance</h3>
+                    <p>
+                        Passionate about backend security with <strong>Spring Security & JWT</strong> role-based access control, transaction isolation, and query optimization that reduced API response time by <strong>20%</strong>.
+                    </p>
+                    <div class="tech-strip">
+                        <span>JWT</span>
+                        <span>Spring Security</span>
+                        <span>Indexing</span>
+                        <span>REST</span>
+                    </div>
+                </div>
+
+                <!-- Side Card 2: Academic Status Card -->
+                <div class="bento-card bento-card-academic reveal reveal-up" style="--delay: 0.15s">
+                    <div class="card-icon-header">
+                        <i data-feather="award"></i>
+                        <span class="card-tag">Academic Milestone</span>
+                    </div>
+                    <h3>MCA Graduation Completed</h3>
+                    <p class="journey-desc">
+                        Graduation Completed (2023 - 2025) at <strong>Presidency University, Bengaluru</strong> maintaining an excellent <strong>8.19 CGPA</strong>. Actively building and deploying production-ready projects.
+                    </p>
+                    <div class="location-pill">
+                        <i data-feather="map-pin"></i> Bengaluru, Karnataka, India
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS SECTION (BORDERLESS INTERACTIVE FLOATING ARENA) ================= -->
+        <section id="skills" class="skills-section">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Interactive Tech Playground</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="title-underline"></div>
+                <p class="skills-interactive-hint">
+                    <i data-feather="move"></i> <span>Drag and move any tech stack anywhere inside the arena!</span>
+                </p>
+            </div>
+
+            <!-- View Mode Switcher -->
+            <div class="skills-mode-controls reveal reveal-up">
+                <button class="mode-btn active" id="modeFloatBtn">
+                    <i data-feather="compass"></i> Interactive Float Arena
+                </button>
+                <button class="mode-btn" id="modeGridBtn">
+                    <i data-feather="grid"></i> Organized Grid
+                </button>
+            </div>
+
+            <!-- Borderless Floating Interactive Draggable Arena -->
+            <div class="floating-skills-arena borderless-arena reveal reveal-up" id="floatingSkillsArena">
+                <div class="float-item" data-tech="Java">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/java.png" alt="Java" draggable="false">
+                        <span>Java</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="Spring Boot">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/spring.png" alt="Spring Boot" draggable="false">
+                        <span>Spring Boot</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="React.js">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/react.png" alt="React.js" draggable="false">
+                        <span>React.js</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="MySQL">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/mysql.png" alt="MySQL" draggable="false">
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="Hibernate">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/hibernate.jpg" alt="Hibernate" draggable="false">
+                        <span>Hibernate</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="REST API">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/restapi.jpg" alt="REST API" draggable="false">
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="JavaScript">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/java-script.png" alt="JavaScript" draggable="false">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="Tailwind CSS">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/tailwind-css.jpg" alt="Tailwind CSS" draggable="false">
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="Git">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/git.png" alt="Git" draggable="false">
+                        <span>Git</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="Postman">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/postman.jpg" alt="Postman" draggable="false">
+                        <span>Postman</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="Node.js">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/nodejs.png" alt="Node.js" draggable="false">
+                        <span>Node.js</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="MongoDB">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/mongodb.png" alt="MongoDB" draggable="false">
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="Docker">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/docker.jpg" alt="Docker" draggable="false">
+                        <span>Docker</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="Python">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/python.png" alt="Python" draggable="false">
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="float-item" data-tech="Swagger">
+                    <div class="float-inner">
+                        <img src="../Assets/Skills-Images/swagger.png" alt="Swagger" draggable="false">
+                        <span>Swagger</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Structured Grid View -->
+            <div class="skills-grid-container hidden" id="skillsGridContainer">
+                <div class="skills-grid" id="skillsGrid">
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-icon-wrapper"><img src="../Assets/Skills-Images/java.png" alt="Java"></div>
+                            <h4 class="skill-name">Java</h4>
+                            <span class="skill-badge">Core & Advanced</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-icon-wrapper"><img src="../Assets/Skills-Images/spring.png" alt="Spring"></div>
+                            <h4 class="skill-name">Spring Boot</h4>
+                            <span class="skill-badge">MVC / Security</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-icon-wrapper"><img src="../Assets/Skills-Images/react.png" alt="React"></div>
+                            <h4 class="skill-name">React.js</h4>
+                            <span class="skill-badge">Frontend Library</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-icon-wrapper"><img src="../Assets/Skills-Images/mysql.png" alt="MySQL"></div>
+                            <h4 class="skill-name">MySQL</h4>
+                            <span class="skill-badge">Relational DB</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-icon-wrapper"><img src="../Assets/Skills-Images/hibernate.jpg" alt="Hibernate"></div>
+                            <h4 class="skill-name">Hibernate</h4>
+                            <span class="skill-badge">ORM / JPA</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-icon-wrapper"><img src="../Assets/Skills-Images/restapi.jpg" alt="REST API"></div>
+                            <h4 class="skill-name">REST APIs</h4>
+                            <span class="skill-badge">Microservices</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-icon-wrapper"><img src="../Assets/Skills-Images/java-script.png" alt="JavaScript"></div>
+                            <h4 class="skill-name">JavaScript</h4>
+                            <span class="skill-badge">ES6+</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-icon-wrapper"><img src="../Assets/Skills-Images/tailwind-css.jpg" alt="Tailwind"></div>
+                            <h4 class="skill-name">Tailwind CSS</h4>
+                            <span class="skill-badge">Styling</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-icon-wrapper"><img src="../Assets/Skills-Images/git.png" alt="Git"></div>
+                            <h4 class="skill-name">Git</h4>
+                            <span class="skill-badge">Version Control</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-icon-wrapper"><img src="../Assets/Skills-Images/postman.jpg" alt="Postman"></div>
+                            <h4 class="skill-name">Postman</h4>
+                            <span class="skill-badge">API Testing</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-icon-wrapper"><img src="../Assets/Skills-Images/nodejs.png" alt="Node.js"></div>
+                            <h4 class="skill-name">Node.js</h4>
+                            <span class="skill-badge">Runtime</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-icon-wrapper"><img src="../Assets/Skills-Images/mongodb.png" alt="MongoDB"></div>
+                            <h4 class="skill-name">MongoDB</h4>
+                            <span class="skill-badge">NoSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIENCE SECTION ================= -->
+        <section id="experience" class="experience-section">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Work & Training</span>
+                <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="experience-grid">
+                <!-- Experience 1: Tap Academy -->
+                <div class="experience-card reveal reveal-left">
+                    <div class="exp-header-row">
+                        <div class="company-brand">
+                            <img src="../Assets/Experience/tabAcademy.webp" alt="Tap Academy" class="company-logo">
+                            <div class="company-info">
+                                <h3 class="company-name">Tap Academy</h3>
+                                <p class="role-title">Java FullStack Web Developer with AI</p>
+                            </div>
+                        </div>
+                        <div class="exp-date-box">
+                            <i data-feather="calendar"></i>
+                            <span>May 2026 - Pursuing</span>
+                        </div>
+                    </div>
+
+                    <div class="exp-tech-tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                        <span>Hibernate</span>
+                        <span>Spring Security</span>
+                        <span>React</span>
+                        <span>REST APIs</span>
+                    </div>
+
+                    <ul class="exp-bullets">
+                        <li>
+                            <i data-feather="check" class="bullet-icon"></i>
+                            <span>Engineered <strong>15+ RESTful APIs</strong> supporting student management, faculty workflows, attendance tracking, and JWT authentication.</span>
+                        </li>
+                        <li>
+                            <i data-feather="check" class="bullet-icon"></i>
+                            <span>Configured <strong>Spring Security & JWT</strong> for role-based access control (RBAC), securing enterprise endpoints.</span>
+                        </li>
+                        <li>
+                            <i data-feather="check" class="bullet-icon"></i>
+                            <span>Designed normalized <strong>MySQL database schemas</strong> with indexed queries, reducing API response time by <strong>20%</strong>.</span>
+                        </li>
+                        <li>
+                            <i data-feather="check" class="bullet-icon"></i>
+                            <span>Integrated React frontend UI with backend micro-endpoints using clean RESTful principles.</span>
+                        </li>
+                    </ul>
+
+                    <div class="exp-footer">
+                        <button type="button" class="btn-exp-cert experience-cert-btn" data-certificate="../Assets/Certificates/Qspire.jpeg">
+                            <i data-feather="award"></i>
+                            <span>View Training Certificate</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Experience 2: Qspire Academy -->
+                <div class="experience-card reveal reveal-right">
+                    <div class="exp-header-row">
+                        <div class="company-brand">
+                            <img src="../Assets/Experience/qspire.png" alt="Qspire Academy" class="company-logo">
+                            <div class="company-info">
+                                <h3 class="company-name">Qspire Academy</h3>
+                                <p class="role-title">Java FullStack Developer Intern</p>
+                            </div>
+                        </div>
+                        <div class="exp-date-box">
+                            <i data-feather="calendar"></i>
+                            <span>Dec 2022 - Mar 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="project-spotlight-pill">
+                        <i data-feather="shopping-bag"></i> Project: <strong>F4Kart (E-Commerce Web App)</strong>
+                    </div>
+
+                    <div class="exp-tech-tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Maven</span>
+                        <span>MySQL</span>
+                        <span>Postman</span>
+                        <span>Git</span>
+                    </div>
+
+                    <ul class="exp-bullets">
+                        <li>
+                            <i data-feather="check" class="bullet-icon"></i>
+                            <span>Developed <strong>20+ REST APIs</strong> powering product catalogs, shopping cart, wishlist, and dynamic checkout orders.</span>
+                        </li>
+                        <li>
+                            <i data-feather="check" class="bullet-icon"></i>
+                            <span>Optimized MySQL relational queries and transaction workflows, enhancing execution efficiency by <strong>15%</strong>.</span>
+                        </li>
+                        <li>
+                            <i data-feather="check" class="bullet-icon"></i>
+                            <span>Conducted end-to-end API testing and validation with <strong>Postman</strong> before deploying.</span>
+                        </li>
+                    </ul>
+
+                    <div class="exp-footer">
+                        <button type="button" class="btn-exp-cert experience-cert-btn" data-certificate="../Assets/Certificates/Qspire.jpeg">
+                            <i data-feather="award"></i>
+                            <span>View Internship Certificate</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SCROLL-STACKING FEATURED PROJECTS WITH PROMINENT LEFT BIKE SPEEDOMETER ================= -->
+        <section id="projects" class="projects-section">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Scroll To Shift Gears</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Master Scroll Pinned Section with Prominent Left Speedometer HUD (No container) -->
+            <div class="projects-scroll-wrapper" id="projectsScrollWrapper">
+                <!-- Left Pure Speedometer Gauge (Prominent Big HUD, Aligned completely to the left, No background box) -->
+                <div class="speedometer-hud-column">
+                    <div class="speedometer-pure-cluster" id="speedometerHud">
+                        <div class="speedometer-dial">
+                            <!-- High-Def Large Superbike Tachometer SVG -->
+                            <svg class="speedometer-svg" viewBox="0 0 280 280">
+                                <defs>
+                                    <linearGradient id="speedoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#00f5a0"/>
+                                        <stop offset="45%" stop-color="#c084fc"/>
+                                        <stop offset="85%" stop-color="#fb7185"/>
+                                        <stop offset="100%" stop-color="#ef4444"/>
+                                    </linearGradient>
+                                    <filter id="speedoGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                        <feGaussianBlur stdDeviation="4" result="blur"/>
+                                        <feMerge>
+                                            <feMergeNode in="blur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <!-- Outer Concentric Subtle Track -->
+                                <circle cx="140" cy="140" r="126" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" stroke-dasharray="4 8"/>
+                                <circle cx="140" cy="140" r="95" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+
+                                <!-- Speedometer Gauge Background Track (240 deg arc) -->
+                                <path d="M 40 198 A 115 115 0 1 1 240 198" class="gauge-bg-track" fill="none" stroke-width="16" stroke-linecap="round"/>
+                                
+                                <!-- Speedometer Gauge Active Track (240 deg arc) -->
+                                <path d="M 40 198 A 115 115 0 1 1 240 198" class="gauge-active-track" id="gaugeActiveTrack" fill="none" stroke="url(#speedoGrad)" stroke-width="16" stroke-linecap="round"/>
+
+                                <!-- Speed Ticks & Numbers -->
+                                <text x="36" y="215" class="gauge-tick-text">0</text>
+                                <text x="24" y="145" class="gauge-tick-text">40</text>
+                                <text x="52" y="80" class="gauge-tick-text">80</text>
+                                <text x="126" y="48" class="gauge-tick-text">120</text>
+                                <text x="200" y="80" class="gauge-tick-text">160</text>
+                                <text x="230" y="145" class="gauge-tick-text">200</text>
+                                <text x="220" y="215" class="gauge-tick-text redline-text">240</text>
+                            </svg>
+
+                            <!-- Dynamic Rotating Needle -->
+                            <div class="speedometer-needle-pivot" id="speedoNeedle">
+                                <div class="needle-tip"></div>
+                                <div class="needle-center-cap"></div>
+                            </div>
+
+                            <!-- Speed Digital Readout -->
+                            <div class="speedo-digital-readout">
+                                <span class="speed-val" id="speedoNumber">20</span>
+                                <span class="speed-unit">KM / H</span>
+                            </div>
+                        </div>
+
+                        <!-- Gear & Project Status Cluster -->
+                        <div class="speedo-gear-cluster">
+                            <div class="gear-status">
+                                <span class="gear-label">GEAR / PROJECT</span>
+                                <span class="gear-active-num" id="gearNumber">01</span>
+                            </div>
+                            <div class="rpm-lights-row" id="rpmLightsRow">
+                                <span class="rpm-dot active"></span>
+                                <span class="rpm-dot"></span>
+                                <span class="rpm-dot"></span>
+                                <span class="rpm-dot"></span>
+                                <span class="rpm-dot"></span>
+                                <span class="rpm-dot"></span>
+                                <span class="rpm-dot"></span>
+                                <span class="rpm-dot"></span>
+                            </div>
+                            <div class="speedo-status-capsule">
+                                <span class="speedo-status-text" id="speedoStatusText">⚡ Cruise Control</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Scroll-Stacking Project Cards -->
+                <div class="projects-stack-column">
+                    <!-- Project 01: BasketStudio-Ecommerce -->
+                    <div class="stacked-project-card stack-card-1" data-project-index="1">
+                        <div class="stack-card-badge">
+                            <span class="project-num-tag">PROJECT 01</span>
+                            <span class="project-tag-pill">Full Stack Java / React</span>
+                        </div>
+
+                        <div class="stack-card-body">
+                            <div class="stack-card-visual">
+                                <img src="../Assets/Projects/studentPortal2.png" alt="BasketStudio E-Commerce Platform" loading="lazy">
+                                <div class="visual-glow-border"></div>
+                            </div>
+
+                            <div class="stack-card-details">
+                                <h3 class="stack-card-title">BasketStudio E-Commerce Platform</h3>
+                                <p class="stack-card-desc">
+                                    A full-stack online shopping platform engineered with <strong>Java</strong>, <strong>Spring Boot</strong>, and <strong>React</strong> featuring real-time product catalogs, cart workflows, and responsive checkout.
+                                </p>
+
+                                <div class="stack-tech-chips">
+                                    <span>Java</span>
+                                    <span>Spring Boot</span>
+                                    <span>React</span>
+                                    <span>MySQL</span>
+                                    <span>REST APIs</span>
+                                    <span>Vercel</span>
+                                </div>
+
+                                <div class="stack-card-actions">
+                                    <a href="https://github.com/DuddeJaitej/BasketStudio-Ecommerce" target="_blank" rel="noopener noreferrer" class="btn btn-proj-primary">
+                                        <i data-feather="github"></i> <span>GitHub Code</span>
+                                    </a>
+                                    <a href="https://basket-studio-ecommerce.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-proj-live">
+                                        <i data-feather="external-link"></i> <span>Live Demo</span>
+                                    </a>
+                                </div>
+                                <div class="deploy-note-pill">
+                                    <i data-feather="info"></i>
+                                    <span>Frontend Live on Vercel • Backend in Migration</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 02: Student-Portal-Management-System -->
+                    <div class="stacked-project-card stack-card-2" data-project-index="2">
+                        <div class="stack-card-badge">
+                            <span class="project-num-tag">PROJECT 02</span>
+                            <span class="project-tag-pill">Enterprise Java Backend</span>
+                        </div>
+
+                        <div class="stack-card-body">
+                            <div class="stack-card-visual">
+                                <img src="../Assets/Projects/studentPortal1.png" alt="Student Portal Management System" loading="lazy">
+                                <div class="visual-glow-border"></div>
+                            </div>
+
+                            <div class="stack-card-details">
+                                <h3 class="stack-card-title">Student Portal Management System</h3>
+                                <p class="stack-card-desc">
+                                    Academic management system built with <strong>Spring Boot</strong>, <strong>Spring MVC</strong>, <strong>Hibernate</strong>, <strong>MySQL</strong>, and <strong>JWT</strong> role-based access control.
+                                </p>
+
+                                <div class="stack-tech-chips">
+                                    <span>Java</span>
+                                    <span>Spring Boot</span>
+                                    <span>Hibernate</span>
+                                    <span>Spring Security</span>
+                                    <span>MySQL</span>
+                                    <span>JWT</span>
+                                    <span>Swagger</span>
+                                </div>
+
+                                <div class="stack-card-actions">
+                                    <a href="https://github.com/DuddeJaitej/Student-Portal-Management-System" target="_blank" rel="noopener noreferrer" class="btn btn-proj-primary">
+                                        <i data-feather="github"></i> <span>GitHub Code</span>
+                                    </a>
+                                    <a href="#contact" class="btn btn-proj-secondary">
+                                        <i data-feather="image"></i> <span>View Preview</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 03: Restorent -->
+                    <div class="stacked-project-card stack-card-3" data-project-index="3">
+                        <div class="stack-card-badge">
+                            <span class="project-num-tag">PROJECT 03</span>
+                            <span class="project-tag-pill">Frontend Web App</span>
+                        </div>
+
+                        <div class="stack-card-body">
+                            <div class="stack-card-visual">
+                                <img src="../Assets/Projects/studentPortal3.png" alt="Restorent Web Application" loading="lazy">
+                                <div class="visual-glow-border"></div>
+                            </div>
+
+                            <div class="stack-card-details">
+                                <h3 class="stack-card-title">Restorent Web Application</h3>
+                                <p class="stack-card-desc">
+                                    Dynamic culinary restaurant web platform featuring interactive menus, cart selection, and responsive layout design.
+                                </p>
+
+                                <div class="stack-tech-chips">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>Responsive UI</span>
+                                    <span>Vercel</span>
+                                </div>
+
+                                <div class="stack-card-actions">
+                                    <a href="https://github.com/DuddeJaitej/Restorent" target="_blank" rel="noopener noreferrer" class="btn btn-proj-primary">
+                                        <i data-feather="github"></i> <span>GitHub Code</span>
+                                    </a>
+                                    <a href="https://restorent-lyart.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-proj-live">
+                                        <i data-feather="external-link"></i> <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 04: 9Tails-Ecommerce-WebApp -->
+                    <div class="stacked-project-card stack-card-4" data-project-index="4">
+                        <div class="stack-card-badge">
+                            <span class="project-num-tag">PROJECT 04</span>
+                            <span class="project-tag-pill">Full Stack E-Commerce</span>
+                        </div>
+
+                        <div class="stack-card-body">
+                            <div class="stack-card-visual">
+                                <img src="../Assets/Projects/studentPortal4.png" alt="9Tails E-Commerce WebApp" loading="lazy">
+                                <div class="visual-glow-border"></div>
+                            </div>
+
+                            <div class="stack-card-details">
+                                <h3 class="stack-card-title">9Tails E-Commerce WebApp</h3>
+                                <p class="stack-card-desc">
+                                    Scalable full-stack e-commerce architecture engineered for catalog navigation, high-throughput REST APIs, and database transaction consistency.
+                                </p>
+
+                                <div class="stack-tech-chips">
+                                    <span>Java</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>REST APIs</span>
+                                    <span>Hibernate</span>
+                                    <span>Maven</span>
+                                </div>
+
+                                <div class="stack-card-actions">
+                                    <a href="https://github.com/DuddeJaitej/9Tails-Ecommerce-WebApp" target="_blank" rel="noopener noreferrer" class="btn btn-proj-primary">
+                                        <i data-feather="github"></i> <span>GitHub Code</span>
+                                    </a>
+                                    <a href="#contact" class="btn btn-proj-secondary">
+                                        <i data-feather="image"></i> <span>View Preview</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 05: ApplyForge -->
+                    <div class="stacked-project-card stack-card-5" data-project-index="5">
+                        <div class="stack-card-badge">
+                            <span class="project-num-tag">PROJECT 05</span>
+                            <span class="project-tag-pill">Career Automation Tool</span>
+                        </div>
+
+                        <div class="stack-card-body">
+                            <div class="stack-card-visual">
+                                <img src="../Assets/Projects/studentPortal1.png" alt="ApplyForge Engine" loading="lazy">
+                                <div class="visual-glow-border"></div>
+                            </div>
+
+                            <div class="stack-card-details">
+                                <h3 class="stack-card-title">ApplyForge Application Engine</h3>
+                                <p class="stack-card-desc">
+                                    Streamlined application pipeline tool designed to track, organize, and accelerate job application lifecycles and document submissions.
+                                </p>
+
+                                <div class="stack-tech-chips">
+                                    <span>JavaScript</span>
+                                    <span>Node.js</span>
+                                    <span>REST APIs</span>
+                                    <span>Modern CSS</span>
+                                    <span>Git</span>
+                                </div>
+
+                                <div class="stack-card-actions">
+                                    <a href="https://github.com/DuddeJaitej/ApplyForge" target="_blank" rel="noopener noreferrer" class="btn btn-proj-primary">
+                                        <i data-feather="github"></i> <span>GitHub Code</span>
+                                    </a>
+                                    <a href="#contact" class="btn btn-proj-secondary">
+                                        <i data-feather="image"></i> <span>View Preview</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 06: Luxury-Watch-Landing-Page -->
+                    <div class="stacked-project-card stack-card-6" data-project-index="6">
+                        <div class="stack-card-badge">
+                            <span class="project-num-tag">PROJECT 06</span>
+                            <span class="project-tag-pill">TypeScript / Modern UI</span>
+                        </div>
+
+                        <div class="stack-card-body">
+                            <div class="stack-card-visual">
+                                <img src="../Assets/Projects/studentPortal3.png" alt="Luxury Watch Experience" loading="lazy">
+                                <div class="visual-glow-border"></div>
+                            </div>
+
+                            <div class="stack-card-details">
+                                <h3 class="stack-card-title">Luxury Watch Experience</h3>
+                                <p class="stack-card-desc">
+                                    High-precision luxury timepiece showcase featuring smooth interactive micro-interactions, dark glass aesthetics, and responsive layout.
+                                </p>
+
+                                <div class="stack-tech-chips">
+                                    <span>TypeScript</span>
+                                    <span>React</span>
+                                    <span>Tailwind CSS</span>
+                                    <span>Render</span>
+                                    <span>Modern UX</span>
+                                </div>
+
+                                <div class="stack-card-actions">
+                                    <a href="https://github.com/DuddeJaitej/Luxury-Watch-Landing-Page" target="_blank" rel="noopener noreferrer" class="btn btn-proj-primary">
+                                        <i data-feather="github"></i> <span>GitHub Code</span>
+                                    </a>
+                                    <a href="https://luxury-watch-landing.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-proj-live">
+                                        <i data-feather="external-link"></i> <span>Live Demo</span>
+                                    </a>
+                                </div>
+                                <div class="deploy-note-pill">
+                                    <i data-feather="clock"></i>
+                                    <span>Render Free Tier: ~30s–50s initial spin-up</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 07: University-Fest-Landing-Page -->
+                    <div class="stacked-project-card stack-card-7" data-project-index="7">
+                        <div class="stack-card-badge">
+                            <span class="project-num-tag">PROJECT 07</span>
+                            <span class="project-tag-pill">Responsive Event UI</span>
+                        </div>
+
+                        <div class="stack-card-body">
+                            <div class="stack-card-visual">
+                                <img src="../Assets/Projects/studentPortal4.png" alt="University Fest Landing Page" loading="lazy">
+                                <div class="visual-glow-border"></div>
+                            </div>
+
+                            <div class="stack-card-details">
+                                <h3 class="stack-card-title">University Fest Portal</h3>
+                                <p class="stack-card-desc">
+                                    Vibrant campus event portal highlighting artist showcases, festival timeline schedules, interactive venues, and pass bookings.
+                                </p>
+
+                                <div class="stack-tech-chips">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>GitHub Pages</span>
+                                    <span>Event UI</span>
+                                </div>
+
+                                <div class="stack-card-actions">
+                                    <a href="https://github.com/DuddeJaitej/University-Fest-Landing-Page" target="_blank" rel="noopener noreferrer" class="btn btn-proj-primary">
+                                        <i data-feather="github"></i> <span>GitHub Code</span>
+                                    </a>
+                                    <a href="https://duddejaitej.github.io/University-Fest-Landing-Page/" target="_blank" rel="noopener noreferrer" class="btn btn-proj-live">
+                                        <i data-feather="external-link"></i> <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 08: Ui-UxDesigningProjectOne -->
+                    <div class="stacked-project-card stack-card-8" data-project-index="8">
+                        <div class="stack-card-badge">
+                            <span class="project-num-tag">PROJECT 08</span>
+                            <span class="project-tag-pill">UI / UX Architecture</span>
+                        </div>
+
+                        <div class="stack-card-body">
+                            <div class="stack-card-visual">
+                                <img src="../Assets/Projects/studentPortal1.png" alt="UI / UX Design System" loading="lazy">
+                                <div class="visual-glow-border"></div>
+                            </div>
+
+                            <div class="stack-card-details">
+                                <h3 class="stack-card-title">UI / UX Design System Prototype</h3>
+                                <p class="stack-card-desc">
+                                    Modern digital interface prototype designed with focus on ergonomic layout hierarchy, accessibility, component reusability, and clean typography.
+                                </p>
+
+                                <div class="stack-tech-chips">
+                                    <span>UI/UX Design</span>
+                                    <span>Figma</span>
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>Design Systems</span>
+                                </div>
+
+                                <div class="stack-card-actions">
+                                    <a href="https://github.com/DuddeJaitej/Ui-UxDesigningProjectOne" target="_blank" rel="noopener noreferrer" class="btn btn-proj-primary">
+                                        <i data-feather="github"></i> <span>GitHub Code</span>
+                                    </a>
+                                    <a href="#contact" class="btn btn-proj-secondary">
+                                        <i data-feather="image"></i> <span>View Preview</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EDUCATION SECTION (PINNED SCROLL, ALTERNATING LEFT/RIGHT TIMELINE & CENTER BEAM) ================= -->
+        <section id="education" class="education-section education-pinned-track">
+            <div class="education-sticky-stage" id="eduStickyStage">
+                <div class="section-header">
+                    <span class="section-subtitle">Academic Milestones</span>
+                    <h2 class="section-title">Educational <span class="gradient-text">Journey</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Alternating Vertical Timeline Connected to Center Beam -->
+                <div class="edu-timeline-arena" id="eduTimelineArena">
+                    <!-- Center Glowing Beam Line -->
+                    <div class="edu-center-beam" id="eduCenterBeam">
+                        <div class="edu-beam-glow-fill" id="eduBeamGlowFill"></div>
+                    </div>
+
+                    <!-- Milestone 1: MCA (Left) -->
+                    <div class="edu-timeline-row edu-row-left" id="eduRow1" data-edu-step="1">
+                        <div class="edu-timeline-card" id="eduCard1">
+                            <div class="edu-card-ambient-aura"></div>
+                            <div class="edu-card-header">
+                                <div class="edu-badge">Master's Degree</div>
+                                <span class="cgpa-pill">CGPA: <strong>8.19</strong></span>
+                            </div>
+                            <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
+                            <p class="edu-school"><i data-feather="map-pin"></i> Presidency University, Bengaluru</p>
+                            <p class="edu-time"><i data-feather="calendar"></i> 2023 – 2025</p>
+                            <p class="edu-info">Specialized in Enterprise Software Engineering, Advanced Java, Database Systems, and Cloud Architectures.</p>
+                            <div class="edu-card-glow-bar"></div>
+                        </div>
+                        <div class="edu-center-node" id="eduNode1">
+                            <span class="orb-icon">🎓</span>
+                        </div>
+                        <div class="edu-timeline-spacer"></div>
+                    </div>
+
+                    <!-- Milestone 2: BCA (Right) -->
+                    <div class="edu-timeline-row edu-row-right" id="eduRow2" data-edu-step="2">
+                        <div class="edu-timeline-spacer"></div>
+                        <div class="edu-center-node" id="eduNode2">
+                            <span class="orb-icon">💻</span>
+                        </div>
+                        <div class="edu-timeline-card" id="eduCard2">
+                            <div class="edu-card-ambient-aura"></div>
+                            <div class="edu-card-header">
+                                <div class="edu-badge">Bachelor's Degree</div>
+                                <span class="cgpa-pill">CGPA: <strong>7.53</strong></span>
+                            </div>
+                            <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+                            <p class="edu-school"><i data-feather="map-pin"></i> SDHR Degree & PG College, Tirupati</p>
+                            <p class="edu-time"><i data-feather="calendar"></i> 2020 – 2023</p>
+                            <p class="edu-info">Foundational computer science principles, OOP concepts, Data Structures, Web Development, and RDBMS.</p>
+                            <div class="edu-card-glow-bar"></div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 3: Intermediate (Left) -->
+                    <div class="edu-timeline-row edu-row-left" id="eduRow3" data-edu-step="3">
+                        <div class="edu-timeline-card" id="eduCard3">
+                            <div class="edu-card-ambient-aura"></div>
+                            <div class="edu-card-header">
+                                <div class="edu-badge">Higher Secondary</div>
+                                <span class="cgpa-pill">CGPA: <strong>7.92</strong></span>
+                            </div>
+                            <h3 class="edu-degree">Intermediate (MEC)</h3>
+                            <p class="edu-school"><i data-feather="map-pin"></i> Gitam Junior College, Tirupati</p>
+                            <p class="edu-time"><i data-feather="calendar"></i> 2018 – 2020</p>
+                            <p class="edu-info">Mathematics, Economics, and Commerce with strong analytical and problem-solving focus.</p>
+                            <div class="edu-card-glow-bar"></div>
+                        </div>
+                        <div class="edu-center-node" id="eduNode3">
+                            <span class="orb-icon">📚</span>
+                        </div>
+                        <div class="edu-timeline-spacer"></div>
+                    </div>
+
+                    <!-- Milestone 4: SSC (Right) -->
+                    <div class="edu-timeline-row edu-row-right" id="eduRow4" data-edu-step="4">
+                        <div class="edu-timeline-spacer"></div>
+                        <div class="edu-center-node" id="eduNode4">
+                            <span class="orb-icon">🏫</span>
+                        </div>
+                        <div class="edu-timeline-card" id="eduCard4">
+                            <div class="edu-card-ambient-aura"></div>
+                            <div class="edu-card-header">
+                                <div class="edu-badge">Secondary School</div>
+                                <span class="cgpa-pill">CGPA: <strong>8.80</strong></span>
+                            </div>
+                            <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+                            <p class="edu-school"><i data-feather="map-pin"></i> Sri Lakshmi Narasimha English Medium School</p>
+                            <p class="edu-time"><i data-feather="calendar"></i> 2017 – 2018</p>
+                            <p class="edu-info">Graduated with distinction with high academic standing in Science and Mathematics.</p>
+                            <div class="edu-card-glow-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CERTIFICATES SECTION (TIGHT AUTO-SIZED PILLS & BLAST ANIMATION) ================= -->
+        <section id="certificates" class="certificates-section">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Verified Credentials</span>
+                <h2 class="section-title">Licenses & <span class="gradient-text">Certificates</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="certificates-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card blastable-card reveal reveal-right" style="--delay: 0.05s">
+                    <div class="cert-top-row">
+                        <div class="cert-badge-tag"><i data-feather="check-circle"></i> Java & Python</div>
+                        <span class="cert-date"><i data-feather="calendar"></i> Nov 2022 – Feb 2023</span>
+                    </div>
+                    <h3 class="cert-title">Java Developer & Python Developer</h3>
+                    <p class="cert-issuer">Wave Infotech</p>
+                    <div class="cert-skills-pills-tight">
+                        <span class="tight-pill">Core Java</span>
+                        <span class="tight-pill">OOPs</span>
+                        <span class="tight-pill">Exception Handling</span>
+                    </div>
+                    <button class="btn-view-cert view-certificate blast-btn" data-certificate="../Assets/Certificates/Java, Python.jpg">
+                        <i data-feather="eye"></i> <span>View Certificate</span>
+                    </button>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card blastable-card reveal reveal-right" style="--delay: 0.12s">
+                    <div class="cert-top-row">
+                        <div class="cert-badge-tag"><i data-feather="check-circle"></i> Full Stack</div>
+                        <span class="cert-date"><i data-feather="calendar"></i> Oct 2024 – Dec 2024</span>
+                    </div>
+                    <h3 class="cert-title">Master Course in Full Stack Development</h3>
+                    <p class="cert-issuer">Great Learning</p>
+                    <div class="cert-skills-pills-tight">
+                        <span class="tight-pill">React</span>
+                        <span class="tight-pill">Node.js</span>
+                        <span class="tight-pill">Express</span>
+                        <span class="tight-pill">MySQL</span>
+                    </div>
+                    <button class="btn-view-cert view-certificate blast-btn" data-certificate="../Assets/Certificates/React_Full_Stack.jpg">
+                        <i data-feather="eye"></i> <span>View Certificate</span>
+                    </button>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card blastable-card reveal reveal-right" style="--delay: 0.18s">
+                    <div class="cert-top-row">
+                        <div class="cert-badge-tag"><i data-feather="check-circle"></i> Mobile App</div>
+                        <span class="cert-date"><i data-feather="calendar"></i> Sep 2024 – Oct 2024</span>
+                    </div>
+                    <h3 class="cert-title">Android App Development</h3>
+                    <p class="cert-issuer">Corizo</p>
+                    <div class="cert-skills-pills-tight">
+                        <span class="tight-pill">Flutter</span>
+                        <span class="tight-pill">Dart</span>
+                        <span class="tight-pill">Android Studio</span>
+                    </div>
+                    <button class="btn-view-cert view-certificate blast-btn" data-certificate="../Assets/Certificates/Corizo_Flutter_Certificate.jpg">
+                        <i data-feather="eye"></i> <span>View Certificate</span>
+                    </button>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-card blastable-card reveal reveal-right" style="--delay: 0.24s">
+                    <div class="cert-top-row">
+                        <div class="cert-badge-tag"><i data-feather="check-circle"></i> Internship</div>
+                        <span class="cert-date"><i data-feather="calendar"></i> Mar 2025 – Jun 2025</span>
+                    </div>
+                    <h3 class="cert-title">Full Stack Developer Internship</h3>
+                    <p class="cert-issuer">Sikdar Technologies</p>
+                    <div class="cert-skills-pills-tight">
+                        <span class="tight-pill">Flutter</span>
+                        <span class="tight-pill">Node.js</span>
+                        <span class="tight-pill">MongoDB</span>
+                        <span class="tight-pill">REST API</span>
+                    </div>
+                    <button class="btn-view-cert view-certificate blast-btn" data-certificate="../Assets/Certificates/Flutter FullStack Developer Internship.jpg">
+                        <i data-feather="eye"></i> <span>View Certificate</span>
+                    </button>
+                </div>
+
+                <!-- Cert 5 -->
+                <div class="cert-card blastable-card reveal reveal-right" style="--delay: 0.3s">
+                    <div class="cert-top-row">
+                        <div class="cert-badge-tag"><i data-feather="check-circle"></i> AI / ML</div>
+                        <span class="cert-date"><i data-feather="calendar"></i> Nov 2022 – Dec 2022</span>
+                    </div>
+                    <h3 class="cert-title">Machine Learning Foundations</h3>
+                    <p class="cert-issuer">SmartKnower</p>
+                    <div class="cert-skills-pills-tight">
+                        <span class="tight-pill">Python</span>
+                        <span class="tight-pill">Pandas</span>
+                        <span class="tight-pill">Scikit-Learn</span>
+                    </div>
+                    <button class="btn-view-cert view-certificate blast-btn" data-certificate="../Assets/Certificates/SmartKnower.jpeg">
+                        <i data-feather="eye"></i> <span>View Certificate</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT SECTION (DIRECT SYNC TO ARATTAI APPLICATION) ================= -->
+        <section id="contact" class="contact-section">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Reach Out</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-card-wrapper reveal reveal-up">
+                <!-- Left: Info Cards -->
+                <div class="contact-info-panel">
+                    <div class="contact-intro">
+                        <h3>Let's Build Something Exceptional</h3>
+                        <p>
+                            I'm open to full-time roles, internships, and collaborative developer projects. Reach out via email, phone, or drop a message directly to my Arattai messenger application!
+                        </p>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="contact-method-card">
+                            <div class="method-icon"><i data-feather="mail"></i></div>
+                            <div class="method-details">
+                                <span class="method-label">Email Address</span>
+                                <a href="mailto:jaitejdudde333@outlook.com" class="method-value">jaitejdudde333@outlook.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="method-icon"><i data-feather="phone"></i></div>
+                            <div class="method-details">
+                                <span class="method-label">Direct Phone</span>
+                                <a href="tel:+918179974915" class="method-value">+91 8179974915</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method-card">
+                            <div class="method-icon"><i data-feather="map-pin"></i></div>
+                            <div class="method-details">
+                                <span class="method-label">Current Location</span>
+                                <span class="method-value">Bengaluru, Karnataka, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clean Small Social Icons -->
+                    <div class="social-connect-box">
+                        <div class="clean-socials-small">
+                            <a href="https://www.linkedin.com/in/jaitejdudde" target="_blank" rel="noopener noreferrer" class="small-social-link" aria-label="LinkedIn">
+                                <img src="../Assets/Icons/linkedin.png" alt="LinkedIn">
+                            </a>
+                            <a href="https://github.com/DuddeJaitej" target="_blank" rel="noopener noreferrer" class="small-social-link" aria-label="GitHub">
+                                <img src="../Assets/Icons/github.png" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Form syncing to Arattai -->
+                <div class="contact-form-panel">
+                    <form id="contactForm" class="styled-contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Opportunity / Project Inquiry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Hi Dudde, I'd like to talk about..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-contact-submit">
+                            <span>Send Message to Arattai</span>
+                            <i data-feather="send"></i>
+                        </button>
+                    </form>
+
+                    <div id="formMessage" class="form-feedback-message hidden"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CERTIFICATE LIGHTBOX MODAL WITH BLAST TRANSITION ================= -->
+        <div id="certificateModal" class="certificate-modal hidden" role="dialog" aria-modal="true">
+            <div class="modal-backdrop" id="modalBackdrop"></div>
+            <div class="certificate-modal-content" id="certModalContent">
+                <button class="certificate-close" id="certificateClose" aria-label="Close certificate viewer">&times;</button>
+                <div class="modal-image-wrapper">
+                    <img id="certificateImage" src="" alt="Certificate Preview">
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col brand-col">
+                    <a href="#home" class="brand-logo footer-brand">
+                        <span class="logo-name">Jaitej<span class="logo-accent">.dev</span></span>
+                    </a>
+                    <p class="footer-bio">
+                        Java Full Stack Developer crafting dependable Spring Boot architectures and modern web interfaces.
+                    </p>
+                </div>
+
+                <div class="footer-col links-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col links-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col info-col">
+                    <h4>Direct Contact</h4>
+                    <p><i data-feather="mail"></i> <a href="mailto:jaitejdudde333@outlook.com">jaitejdudde333@outlook.com</a></p>
+                    <p><i data-feather="phone"></i> <a href="tel:+918179974915">+91 8179974915</a></p>
+                    <p><i data-feather="map-pin"></i> Bengaluru, India</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dudde Jaitej.</p>
+            </div>
+        </footer>
+
+        <!-- Floating Back To Top Button -->
+        <button id="backToTopBtn" class="back-to-top" aria-label="Scroll to top">
+            <i data-feather="arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="Styles/styles.js"></script>
+</body>
+</html>
