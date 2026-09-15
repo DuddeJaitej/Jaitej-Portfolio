@@ -737,17 +737,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
-    // 12. CONTACT FORM HANDLER (DIRECT ARATTAI APPLICATION SYNC)
+    // ==========================================
+    // 12. CONTACT FORM HANDLER (DIRECT ARATTAI APPLICATION SYNC & CLICK-TO-CHAT)
     // ==========================================
     const contactForm = document.getElementById('contactForm');
     const formFeedback = document.getElementById('formMessage');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', async (e) => {
+        contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
             const submitBtn = contactForm.querySelector('.btn-contact-submit');
-            const originalBtnHtml = submitBtn ? submitBtn.innerHTML : 'Send Message';
+            const originalBtnHtml = submitBtn ? submitBtn.innerHTML : 'Send Message to Arattai';
+
+            const name = document.getElementById('name')?.value.trim() || '';
+            const email = document.getElementById('email')?.value.trim() || '';
+            const subject = document.getElementById('subject')?.value.trim() || '';
+            const message = document.getElementById('message')?.value.trim() || '';
+
+            if (!name || !email || !message) {
+                if (formFeedback) {
+                    formFeedback.innerHTML = '<span>⚠️ Please fill in all required fields.</span>';
+                    formFeedback.className = 'form-feedback-message error';
+                    formFeedback.classList.remove('hidden');
+                }
+                return;
+            }
 
             if (submitBtn) {
                 submitBtn.innerHTML = '<span>Transmitting to Arattai...</span>';
@@ -755,15 +770,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const formData = {
-                name: document.getElementById('name')?.value || '',
-                email: document.getElementById('email')?.value || '',
-                subject: document.getElementById('subject')?.value || '',
-                message: document.getElementById('message')?.value || '',
+                name,
+                email,
+                subject: subject || 'Portfolio Opportunity / Inquiry',
+                message,
                 timestamp: new Date().toISOString(),
-                source: 'Jaitej Portfolio Web'
+                source: 'Jaitej.dev Portfolio'
             };
 
-            // 1. Save locally for Arattai app listener
+            // 1. Save locally in Arattai message queue
             try {
                 const storedMessages = JSON.parse(localStorage.getItem('arattaiMessages') || '[]');
                 storedMessages.push(formData);
@@ -772,35 +787,45 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.warn('LocalStorage error:', err);
             }
 
-            // 2. Transmit to Arattai local server endpoint
-            let transmissionSuccess = false;
+            // 2. Format detailed message for Arattai Chat / Profile Pocket
+            const formattedMessage = 
+`👋 Message from Jaitej.dev Portfolio:
+
+👤 Name: ${formData.name}
+📧 Email: ${formData.email}
+📌 Subject: ${formData.subject}
+
+💬 Message:
+${formData.message}
+
+🕒 Sent: ${new Date().toLocaleString()}`;
+
+            // 3. Official Arattai Click-to-Chat URL targeting phone number (+91 8179974915)
+            const arattaiUrl = `https://aratt.ai/message/91-8179974915?text=${encodeURIComponent(formattedMessage)}`;
+
+            // 4. Open Arattai chat in new tab/window
             try {
-                const response = await fetch('http://localhost:5000/api/messages', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(formData)
-                });
-                if (response.ok) {
-                    transmissionSuccess = true;
-                }
+                window.open(arattaiUrl, '_blank');
             } catch (err) {
-                console.log('Arattai local endpoint offline, stored in Arattai local storage queue.');
+                console.warn('Popup blocked, link provided in UI:', err);
             }
 
-            // Provide visual feedback
+            // 5. Provide instant visual feedback with direct manual link
             setTimeout(() => {
                 if (formFeedback) {
-                    if (transmissionSuccess) {
-                        formFeedback.textContent = '✓ Message transmitted directly to your Arattai app! Thank you, ' + formData.name + '.';
-                    } else {
-                        formFeedback.textContent = '✓ Message logged & synced to Arattai local queue! Thank you, ' + formData.name + '.';
-                    }
+                    formFeedback.innerHTML = `
+                        <span>✓ Message prepared with all details and transmitted to Arattai!</span>
+                        <a href="${arattaiUrl}" target="_blank" rel="noopener noreferrer" class="btn-arattai-direct">
+                            <span>Open in Arattai App / Pocket</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    `;
                     formFeedback.className = 'form-feedback-message success';
                     formFeedback.classList.remove('hidden');
 
                     setTimeout(() => {
                         formFeedback.classList.add('hidden');
-                    }, 6000);
+                    }, 12000);
                 }
 
                 contactForm.reset();
@@ -810,7 +835,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.disabled = false;
                     if (typeof feather !== 'undefined') feather.replace();
                 }
-            }, 600);
+            }, 400);
         });
     }
 });

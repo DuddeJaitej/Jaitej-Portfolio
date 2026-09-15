@@ -2756,18 +2756,53 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-feedback-message {
-    margin-top: 14px;
-    padding: 10px 16px;
-    border-radius: 10px;
-    font-size: 0.88rem;
+    margin-top: 16px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-size: 0.9rem;
     font-weight: 500;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .form-feedback-message.success {
-    background: rgba(0, 245, 160, 0.15);
-    border: 1px solid rgba(0, 245, 160, 0.4);
-    color: #6ee7b7;
+    background: rgba(0, 245, 160, 0.12);
+    border: 1px solid rgba(0, 245, 160, 0.35);
+    color: #a7f3d0;
+    box-shadow: 0 8px 25px rgba(0, 245, 160, 0.15);
+}
+
+.form-feedback-message.error {
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    color: #fca5a5;
+}
+
+.btn-arattai-direct {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: linear-gradient(135deg, #00f5a0 0%, #059669 100%);
+    color: #03140e;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.82rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 15px rgba(0, 245, 160, 0.3);
+}
+
+.btn-arattai-direct:hover {
+    background: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(0, 245, 160, 0.55);
+    color: #000;
 }
 
 .hidden {
