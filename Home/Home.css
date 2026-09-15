@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 15px;
 }
 
-/* 7. Contact Submit Button (Arattai Sync) */
+/* 7. Contact Submit Button (WhatsApp Sync) */
 .btn-contact-submit {
     background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
     color: #000;

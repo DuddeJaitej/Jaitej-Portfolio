@@ -778,7 +778,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 source: 'Jaitej.dev Portfolio'
             };
 
-            // 1. Format clean markdown message for WhatsApp (+91 8179974915)
+            // 1. Save locally in WhatsApp message backup log
+            try {
+                const storedMessages = JSON.parse(localStorage.getItem('whatsappMessages') || '[]');
+                storedMessages.push(formData);
+                localStorage.setItem('whatsappMessages', JSON.stringify(storedMessages));
+            } catch (err) {
+                console.warn('LocalStorage error:', err);
+            }
+
+            // 2. Format clean markdown message for WhatsApp (+91 8179974915)
             const formattedMessage = 
 `👋 *New Message from Jaitej.dev Portfolio*
 
