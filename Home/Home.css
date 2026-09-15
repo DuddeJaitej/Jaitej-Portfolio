@@ -2862,8 +2862,41 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
 }
 
-.btn-whatsapp-direct svg {
+.btn-whatsapp-direct svg,
+.btn-whatsapp-web-direct svg {
     flex-shrink: 0;
+}
+
+.whatsapp-actions-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.btn-whatsapp-web-direct {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 18px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(37, 211, 102, 0.35);
+    color: #a7f3d0;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.84rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn-whatsapp-web-direct:hover {
+    background: rgba(37, 211, 102, 0.18);
+    border-color: #25D366;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
 }
 
 .hidden {
