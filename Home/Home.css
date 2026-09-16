@@ -1957,6 +1957,30 @@ h1, h2, h3, h4, h5, h6 {
     flex-shrink: 0;
 }
 
+.deploy-note-pill.status-implementing-pill {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.08);
+    border-color: rgba(56, 189, 248, 0.28);
+}
+
+.deploy-note-pill.status-implementing-pill svg,
+.deploy-note-pill.status-implementing-pill i {
+    stroke: #38bdf8;
+    color: #38bdf8;
+}
+
+.deploy-note-pill.status-ongoing-pill {
+    color: #c084fc;
+    background: rgba(192, 132, 252, 0.08);
+    border-color: rgba(192, 132, 252, 0.28);
+}
+
+.deploy-note-pill.status-ongoing-pill svg,
+.deploy-note-pill.status-ongoing-pill i {
+    stroke: #c084fc;
+    color: #c084fc;
+}
+
 /* ============ EDUCATION SECTION (PINNED SCROLL, ALTERNATING LEFT/RIGHT TIMELINE & CENTER BEAM) ============ */
 .education-pinned-track {
     min-height: 250vh;
