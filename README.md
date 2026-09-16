@@ -9,7 +9,7 @@
 [![Live Demo](https://img.shields.io/badge/Live_Portfolio-Vercel-00f5a0?style=for-the-badge&logo=vercel&logoColor=black)](https://jaitej-portfolio.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-DuddeJaitej-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DuddeJaitej)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Jaitej_Dudde-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaitej-dudde)
-[![Email](https://img.shields.io/badge/Email-jaitejdudde%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jaitejdudde@gmail.com)
+[![Email](https://img.shields.io/badge/Email-duddejaitej333%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=duddejaitej333@gmail.com)
 
 ---
 
@@ -140,7 +140,7 @@ This repository is pre-configured with `vercel.json` for **zero-configuration de
 - **Portfolio**: [jaitej-portfolio.vercel.app](https://jaitej-portfolio.vercel.app)
 - **LinkedIn**: [linkedin.com/in/jaitej-dudde](https://www.linkedin.com/in/jaitej-dudde)
 - **GitHub**: [github.com/DuddeJaitej](https://github.com/DuddeJaitej)
-- **Email**: [jaitejdudde@gmail.com](mailto:jaitejdudde@gmail.com)
+- **Email**: [duddejaitej333@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=duddejaitej333@gmail.com)
 
 ---
 
