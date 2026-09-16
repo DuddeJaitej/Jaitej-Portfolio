@@ -1469,6 +1469,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: auto;
 }
 
+.exp-training-ongoing-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 16px;
+    background: rgba(0, 245, 160, 0.06);
+    border: 1px solid rgba(0, 245, 160, 0.25);
+    border-radius: 10px;
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: #6ee7b7;
+    letter-spacing: 0.2px;
+}
+
 /* ============ PREMIUM CENTERED EXPERIENCE IMAGE SHOWCASE ============ */
 .experience-showcase-wrapper {
     margin-top: 65px;
