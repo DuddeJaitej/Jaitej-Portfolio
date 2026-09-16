@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     const revealObserverOptions = {
         root: null,
-        rootMargin: '0px 0px -60px 0px',
-        threshold: 0.1
+        rootMargin: '0px 0px -20px 0px',
+        threshold: 0.05
     };
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -84,11 +84,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
-    // 4. MOBILE HAMBURGER MENU
+    // 4. MOBILE HAMBURGER MENU & SMOOTH NAV SCROLL WITH HEADER OFFSET
     // ==========================================
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
+
+    // Smooth Anchor Scroll with Fixed Header Clearance & Instant Reveal
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (!targetId || targetId === '#') return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                const headerOffset = 90;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: Math.max(0, offsetPosition),
+                    behavior: 'smooth'
+                });
+
+                // Instantly reveal target element and all its children
+                if (targetElement.classList.contains('reveal')) {
+                    targetElement.classList.add('revealed');
+                }
+                targetElement.querySelectorAll('.reveal, .cert-card').forEach(el => {
+                    el.classList.add('revealed');
+                });
+            }
+        });
+    });
 
     if (mobileMenuBtn && navMenu) {
         mobileMenuBtn.addEventListener('click', () => {

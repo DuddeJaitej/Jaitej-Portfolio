@@ -2632,11 +2632,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* ============ SECTION SCROLL MARGINS & ANCHOR OFFSETS ============ */
+section[id] {
+    scroll-margin-top: 95px;
+}
+
 /* ============ CONTACT SECTION ============ */
 .contact-section {
+    scroll-margin-top: 95px;
     padding: 90px 30px;
     max-width: 1240px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .contact-card-wrapper {
