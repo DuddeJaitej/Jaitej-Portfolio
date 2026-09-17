@@ -605,28 +605,30 @@ section {
 .experience-grid {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   grid-template-columns: 1fr;
 }
 
 .experience-card {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 18px 16px;
+  gap: 6px;
+  padding: 16px 14px;
   text-align: left;
 }
 
 .experience-card h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.12rem;
+  line-height: 1.35;
 }
 
 .role {
   margin: 0;
   color: var(--primary);
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.45;
+  font-size: 0.95rem;
 }
 
 .experience-card ul {
@@ -634,7 +636,12 @@ section {
   padding-left: 18px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
+}
+
+.experience-card li {
+  line-height: 1.5;
+  font-size: 0.92rem;
 }
 
 .speedometer-hud-column,
