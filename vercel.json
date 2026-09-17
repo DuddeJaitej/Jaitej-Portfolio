@@ -1,9 +1,0 @@
-﻿{
-  "cleanUrls": true,
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/Home/Home.html"
-    }
-  ]
-}
