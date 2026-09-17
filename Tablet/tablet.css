@@ -415,7 +415,51 @@ section {
   text-align: center;
   font-weight: 700;
 }
-.experience-card ul { margin: 12px 0 0; padding-left: 18px; }
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 16px;
+  text-align: left;
+}
+
+.experience-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.role {
+  margin: 0;
+  color: var(--primary);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.experience-card ul {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.speedometer-hud-column,
+.speedometer-pure-cluster,
+.speedometer-dial,
+.speedometer-svg,
+.gauge-bg-track,
+.gauge-active-track,
+.gauge-tick-text,
+.speedometer-needle-pivot {
+  display: none !important;
+}
+
 .project-image { width: 100%; height: 180px; overflow: hidden; }
 .project-image img { width: 100%; height: 100%; object-fit: cover; }
 .project-tag {

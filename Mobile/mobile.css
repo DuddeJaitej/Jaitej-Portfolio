@@ -603,22 +603,49 @@ section {
 }
 
 .experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   grid-template-columns: 1fr;
 }
 
 .experience-card {
-  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 16px;
+  text-align: left;
+}
+
+.experience-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .role {
-  margin: 8px 0;
+  margin: 0;
   color: var(--primary);
   font-weight: 600;
+  line-height: 1.5;
 }
 
 .experience-card ul {
-  margin: 12px 0 0;
+  margin: 0;
   padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.speedometer-hud-column,
+.speedometer-pure-cluster,
+.speedometer-dial,
+.speedometer-svg,
+.gauge-bg-track,
+.gauge-active-track,
+.gauge-tick-text,
+.speedometer-needle-pivot {
+  display: none !important;
 }
 
 .projects-list {
