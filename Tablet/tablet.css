@@ -204,14 +204,14 @@ section {
 .hero-content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 26px;
 }
 
 .hero-text-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 14px;
+  gap: 12px;
 }
 
 .hero-badge {
@@ -236,8 +236,8 @@ section {
 
 .hero-title {
   margin: 0;
-  font-size: clamp(2.8rem, 7.3vw, 4.4rem);
-  line-height: 0.96;
+  font-size: clamp(2.9rem, 5.6vw, 4.2rem);
+  line-height: 0.98;
   letter-spacing: -0.06em;
 }
 
@@ -265,8 +265,8 @@ section {
   font-size: 0.95rem;
 }
 .hero-actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   width: 100%;
 }
@@ -301,8 +301,8 @@ section {
 }
 .small-social-link img { width: 20px; height: 20px; }
 .hero-stats {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px 12px;
   align-items: center;
   width: 100%;
@@ -315,7 +315,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  min-width: 86px;
+  min-width: 0;
   text-align: center;
 }
 .stat-number { font-size: 1.15rem; font-weight: 800; }
@@ -332,8 +332,9 @@ section {
 }
 .hero-image-container {
   position: relative;
-  width: min(82vw, 360px);
-  height: 420px;
+  width: min(64vw, 360px);
+  height: 370px;
+  margin: 0 auto;
 }
 .cyber-frame {
   position: absolute;
@@ -344,7 +345,7 @@ section {
 }
 .image-inner {
   position: absolute;
-  inset: 30px 32px 30px 32px;
+  inset: 26px 28px 26px 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -357,17 +358,17 @@ section {
   position: absolute;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 8px 10px;
+  gap: 8px;
+  padding: 7px 9px;
   background: rgba(9, 14, 22, 0.8);
   border: 1px solid rgba(124, 247, 211, 0.2);
   border-radius: 14px;
 }
-.badge-top-left { left: 10px; top: 14px; }
-.badge-bottom-left { left: 10px; bottom: 10px; }
+.badge-top-left { left: 10px; top: 18px; }
+.badge-bottom-left { left: 10px; bottom: 12px; }
 .badge-icon-box {
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
