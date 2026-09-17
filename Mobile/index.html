@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaitej.dev | Mobile View</title>
+    <meta name="description" content="Jaitej.dev mobile responsive portfolio view" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./mobile.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="scroll-progress" id="scrollProgressBar"></div>
+
+      <header class="floating-header" id="navbar">
+        <nav class="nav-container">
+          <a href="#home" class="brand-logo" aria-label="Jaitej.dev Home">
+            <span class="logo-name">Jaitej<span class="logo-accent">.dev</span></span>
+          </a>
+
+          <button class="menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-menu" id="navMenu">
+            <button class="nav-close-button" id="navCloseBtn" aria-label="Close menu">×</button>
+            <ul class="nav-list">
+              <li><a href="#home" class="nav-link active"><span class="nav-icon">🏠</span><span>Home</span></a></li>
+              <li><a href="#about" class="nav-link"><span class="nav-icon">👤</span><span>About</span></a></li>
+              <li><a href="#skills" class="nav-link"><span class="nav-icon">⚙️</span><span>Skills</span></a></li>
+              <li><a href="#experience" class="nav-link"><span class="nav-icon">💼</span><span>Experience</span></a></li>
+              <li><a href="#projects" class="nav-link"><span class="nav-icon">📁</span><span>Projects</span></a></li>
+              <li><a href="#education" class="nav-link"><span class="nav-icon">🎓</span><span>Education</span></a></li>
+              <li><a href="#certificates" class="nav-link"><span class="nav-icon">🏅</span><span>Certificates</span></a></li>
+              <li><a href="#contact" class="nav-link nav-contact-pill"><span class="nav-icon">📩</span><span>Contact</span></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home" class="hero-section">
+          <div class="hero-content">
+            <div class="hero-text-container reveal reveal-left">
+              <div class="hero-badge">
+                <span class="status-dot"></span>
+                <span>Available for Opportunities</span>
+              </div>
+
+              <h1 class="hero-title">
+                Hi, I'm <br />
+                <span class="gradient-text hero-name">Dudde Jaitej</span>
+              </h1>
+
+              <div class="hero-role-wrapper">
+                <span class="role-prefix">I build scalable solutions as a</span>
+                <div class="role-box">
+                  <span class="role-text" id="typewriterText">Java Full Stack Developer</span>
+                </div>
+              </div>
+
+              <p class="hero-description">
+                Specialized in robust backend architectures with <strong>Spring Boot</strong>, secure <strong>JWT Authentication</strong>, and clean <strong>MySQL</strong> schema design, paired with fast, responsive <strong>React.js</strong> interfaces.
+              </p>
+
+              <div class="hero-actions">
+                <a href="../Assets/Resume-PDF/Dudde-Jaitej_Java_Developer.pdf" class="btn btn-hero-primary" download>
+                  <span class="btn-text">Download Resume</span>
+                </a>
+                <a href="#projects" class="btn btn-hero-secondary">
+                  <span class="btn-text">Explore Projects</span>
+                </a>
+              </div>
+
+              <div class="hero-socials clean-socials-small">
+                <a href="https://www.linkedin.com/in/jaitejdudde" class="small-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn Profile">
+                  <img src="../Assets/Icons/linkedin.png" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/DuddeJaitej" class="small-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub Profile">
+                  <img src="../Assets/Icons/github.png" alt="GitHub" />
+                </a>
+              </div>
+
+              <div class="hero-stats">
+                <div class="stat-item"><span class="stat-number">2025</span><span class="stat-label">MCA Graduate</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat-item"><span class="stat-number">15+</span><span class="stat-label">REST APIs</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat-item"><span class="stat-number">8.19</span><span class="stat-label">MCA CGPA</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat-item"><span class="stat-number">5+</span><span class="stat-label">Certifications</span></div>
+              </div>
+            </div>
+
+            <div class="hero-image-wrapper reveal reveal-right">
+              <div class="hero-image-container" id="heroImageContainer">
+                <div class="cyber-halo"></div>
+                <div class="cyber-frame"></div>
+                <div class="floating-badge badge-top-left">
+                  <div class="badge-icon-box grad-icon">🎓</div>
+                  <div class="badge-content">
+                    <span class="badge-tag">Education</span>
+                    <span class="badge-title">MCA 2025 Graduate</span>
+                  </div>
+                </div>
+                <div class="image-inner">
+                  <img src="../Assets/Dudde Jaitej (2).png" alt="Dudde Jaitej" class="hero-avatar" />
+                </div>
+                <div class="floating-badge badge-bottom-left">
+                  <div class="badge-icon-box dev-icon">💻</div>
+                  <div class="badge-content">
+                    <div class="badge-live-indicator">
+                      <span class="live-dot"></span>
+                      <span class="badge-tag">Specialization</span>
+                    </div>
+                    <span class="badge-title">Full Stack Developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="about-section">
+          <div class="section-header reveal reveal-up">
+            <span class="section-subtitle">Get to know me</span>
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="about-bento-wrapper">
+            <div class="bento-card bento-hero-bio reveal reveal-up">
+              <div class="card-icon-header">
+                <span class="card-tag">Profile Overview</span>
+              </div>
+              <h3>Crafting Scalable Backend & Modern Web Experiences</h3>
+              <p>I am a <strong>Java Full Stack Developer</strong> based in Bengaluru, India. I build dependable web applications using <strong>Java, Spring Boot, Spring MVC, Hibernate, REST APIs</strong>, and <strong>MySQL</strong>.</p>
+              <p>On the frontend, I create fast, responsive interfaces with <strong>React.js, JavaScript, HTML5, CSS3</strong>, and <strong>Tailwind CSS</strong>.</p>
+            </div>
+
+            <div class="bento-card reveal reveal-up">
+              <div class="card-icon-header">
+                <span class="card-tag">Engineering Focus</span>
+              </div>
+              <h3>Security & Performance</h3>
+              <p>Secure backend systems with <strong>Spring Security & JWT</strong>, reasoned query design, and production-grade API flow.</p>
+            </div>
+
+            <div class="bento-card reveal reveal-up">
+              <div class="card-icon-header">
+                <span class="card-tag">Academic Milestone</span>
+              </div>
+              <h3>MCA Graduation Completed</h3>
+              <p>Graduation Completed (2023 - 2025) at <strong>Presidency University, Bengaluru</strong> with <strong>8.19 CGPA</strong>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+          <div class="section-header reveal reveal-up">
+            <span class="section-subtitle">Interactive Tech Playground</span>
+            <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card"><span>Java</span></div>
+            <div class="skill-card"><span>Spring Boot</span></div>
+            <div class="skill-card"><span>React.js</span></div>
+            <div class="skill-card"><span>MySQL</span></div>
+            <div class="skill-card"><span>Hibernate</span></div>
+            <div class="skill-card"><span>REST API</span></div>
+            <div class="skill-card"><span>JavaScript</span></div>
+            <div class="skill-card"><span>Tailwind CSS</span></div>
+            <div class="skill-card"><span>Git</span></div>
+            <div class="skill-card"><span>Postman</span></div>
+            <div class="skill-card"><span>Node.js</span></div>
+            <div class="skill-card"><span>MongoDB</span></div>
+          </div>
+        </section>
+
+        <section id="experience" class="experience-section">
+          <div class="section-header reveal reveal-up">
+            <span class="section-subtitle">Work & Training</span>
+            <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="experience-grid">
+            <article class="experience-card reveal reveal-left">
+              <h3>Tap Academy</h3>
+              <p class="role">Java FullStack Web Developer with AI</p>
+              <ul>
+                <li>Engineered 15+ RESTful APIs for student and faculty workflows.</li>
+                <li>Secured endpoints using Spring Security and JWT.</li>
+                <li>Built MySQL schema and optimized query execution.</li>
+              </ul>
+            </article>
+
+            <article class="experience-card reveal reveal-right">
+              <h3>Qspire Academy</h3>
+              <p class="role">Java FullStack Developer Intern</p>
+              <ul>
+                <li>Developed 20+ APIs powering e-commerce flow.</li>
+                <li>Optimized relational queries and transaction handling.</li>
+                <li>Performed API testing with Postman before release.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+          <div class="section-header reveal reveal-up">
+            <span class="section-subtitle">Scroll To Shift Gears</span>
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="projects-list">
+            <div class="project-card reveal reveal-up">
+              <div class="project-image"><img src="../Assets/Projects/basketstudio.png" alt="BasketStudio" /></div>
+              <div class="project-body">
+                <span class="project-tag">Full Stack Java / React</span>
+                <h3>BasketStudio E-Commerce</h3>
+                <p>Built an end-to-end shopping application with catalog, cart, checkout, and user flows.</p>
+              </div>
+            </div>
+
+            <div class="project-card reveal reveal-up">
+              <div class="project-image"><img src="../Assets/Projects/basketstudio.png" alt="Student Attendance System" /></div>
+              <div class="project-body">
+                <span class="project-tag">Attendance System</span>
+                <h3>Student Attendance Management System</h3>
+                <p>Designed a role-aware attendance portal with data tracking and reporting.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="education" class="education-section">
+          <div class="section-header reveal reveal-up">
+            <span class="section-subtitle">Learning Timeline</span>
+            <h2 class="section-title">Educational <span class="gradient-text">Journey</span></h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="education-stack">
+            <div class="edu-item"><h3>MCA</h3><p>Presidency University, Bengaluru</p><span>2023 - 2025</span></div>
+            <div class="edu-item"><h3>BCA</h3><p>Academic foundation in computer science</p><span>2020 - 2023</span></div>
+            <div class="edu-item"><h3>Intermediate</h3><p>Science and mathematics focus</p><span>2018 - 2020</span></div>
+            <div class="edu-item"><h3>SSC</h3><p>Schooling with strong fundamentals</p><span>2018</span></div>
+          </div>
+        </section>
+
+        <section id="certificates" class="certificates-section">
+          <div class="section-header reveal reveal-up">
+            <span class="section-subtitle">Professional Proof</span>
+            <h2 class="section-title">Certificates <span class="gradient-text">& Badges</span></h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="certificates-grid">
+            <div class="cert-card reveal reveal-up"><img src="../Assets/Certificates/Qspire.jpeg" alt="Qspire certificate" /></div>
+            <div class="cert-card reveal reveal-up"><img src="../Assets/Certificates/Qspire.jpeg" alt="Certificate" /></div>
+            <div class="cert-card reveal reveal-up"><img src="../Assets/Certificates/Qspire.jpeg" alt="Certificate" /></div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+          <div class="section-header reveal reveal-up">
+            <span class="section-subtitle">Let’s Connect</span>
+            <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="contact-card-wrapper reveal reveal-up">
+            <div class="contact-info-panel">
+              <div class="contact-intro">
+                <h3>Open for opportunities</h3>
+                <p>Available for development, product engineering, and collaborative problem-solving.</p>
+              </div>
+              <div class="contact-methods">
+                <div class="contact-method-card">
+                  <div class="method-icon">✉</div>
+                  <div class="method-details"><span class="method-label">Email</span><a href="mailto:duddejaitej333@gmail.com" class="method-value">duddejaitej333@gmail.com</a></div>
+                </div>
+                <div class="contact-method-card">
+                  <div class="method-icon">☎</div>
+                  <div class="method-details"><span class="method-label">Phone</span><a href="tel:+918179974915" class="method-value">+91 81799 74915</a></div>
+                </div>
+              </div>
+            </div>
+            <form class="styled-contact-form">
+              <div class="form-group"><label>Name</label><input type="text" placeholder="Your name" /></div>
+              <div class="form-group"><label>Email</label><input type="email" placeholder="Your email" /></div>
+              <div class="form-group"><label>Message</label><textarea rows="4" placeholder="Tell me about your project"></textarea></div>
+              <button class="btn-contact-submit" type="button">Send Message</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">↑</button>
+    <script src="./mobile.js"></script>
+  </body>
+</html>
